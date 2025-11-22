@@ -1,8 +1,8 @@
 // ============ SUPABASE SYNC LAYER ============
 // Real-time sync dengan Supabase database
 
-const SUPABASE_URL = 'https://swthkllafaryyzqaeagj.supabase.co'
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3dGhrbGxhZmFyeXl6cWFlYWdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI3MDY3NDYsImV4cCI6MTc2NDI0Mjc0Nn0.RXZvX1OyXjUDpWyDBJCnnYJQzH2KBsZAQdkqXZ8Q92Q'
+const SUPABASE_URL = 'https://omkqvtlvabwblgijodxhe.supabase.co'
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ta292dGx2YWJ3YmxnaWpvZHhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3OTA2MzgsImV4cCI6MjA3OTM2NjYzOH0._9CRzqxKd450pX5ZgVAaocCUfWh5vV2GJXIFK3XAGKc'
 
 let supabase = null
 let isCloudAvailable = false
@@ -27,7 +27,7 @@ async function supabaseInit() {
     supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
     
     isCloudAvailable = true
-    console.log('✅ Supabase initialized')
+    console.log('✅ Supabase initialized with URL:', SUPABASE_URL)
     return true
   } catch (e) {
     console.error('❌ Supabase init error:', e)
